@@ -1,11 +1,13 @@
 body {
   font-family: "Roboto Mono", monospace;
-  text-align: center;
   background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background-aluraflix.png");
   background-color: #000000;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: justify;
+  width: 250px;
 }
 
 .container {
@@ -40,5 +42,7 @@ body > img {
 
 img {
   max-height: 250px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
-

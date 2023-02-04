@@ -6,11 +6,20 @@ var moviesList = [
   "https://s1.static.brasilescola.uol.com.br/be/conteudo/images/o-filme-eu-sou-lenda-pode-ser-usado-nas-aulas-biologia-por-abordar-temas-como-doencas-virais-imunizacao-5bcf030bce2eb.jpg", "https://m.media-amazon.com/images/I/81QchPvsz0L._AC_SY550_.jpg", "https://www.ucicinemas.com.br/Content/Upload/Filmes/Posters/10767/filme_10767.jpg"
 ];
 
-for (var i = 0; i < moviesList.length; i++) {
+var moviesName = [
+    "School of Rock", "Sherek", "I am Legend", "Puss in Boots", "Avatar"
+];
+
+for (var i = 0; i < moviesList.length & i < moviesName.length; i++) {
   document.write("<img src=" + moviesList[i] + ">");
+  document.write(moviesName[i])
 }
 
 
-// transform for to while
+// transform for to while     
 // create condition that makes all elements turn into json
 // create a new list with movies name
+
+
+
+
