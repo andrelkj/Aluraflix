@@ -5,7 +5,7 @@ var moviesList = [
   "https://br.web.img2.acsta.net/medias/nmedia/18/91/54/04/20150812.jpg",
   "https://s1.static.brasilescola.uol.com.br/be/conteudo/images/o-filme-eu-sou-lenda-pode-ser-usado-nas-aulas-biologia-por-abordar-temas-como-doencas-virais-imunizacao-5bcf030bce2eb.jpg",
   "https://m.media-amazon.com/images/I/81QchPvsz0L._AC_SY550_.jpg",
-  "https://www.ucicinemas.com.br/Content/Upload/Filmes/Posters/10767/filme_10767.jpg",
+  "https://www.ucicinemas.com.br/Content/Upload/Filmes/Posters/10767/filme_10767.jpg3",
   "https://m.media-amazon.com/images/M/MV5BNzg3OTEzMTgtYWU0OC00YTI0LWIxOTAtNmRkNTc0Nzg2YWU1XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_FMjpg_UX1000_.jpg",
 ];
 
@@ -27,8 +27,16 @@ var moviesName = [
 // while
 let i = 0;
 while ((i < moviesList.length) & (i < moviesName.length)) {
-  document.write("<img src=" + moviesList[i] + ">");
-  document.write(moviesName[i]);
+  if (moviesList[i].endsWith("jpg") || moviesList[i].endsWith("jpeg")) {
+    document.write("<img src=" + moviesList[i] + ">");
+    document.write('<p>' + moviesName[i] + '</p>');
+  } else {
+    document.write(
+      " <p> A imagem " + i + ' - ' +
+        moviesName[i] +
+        " não pode ser mostrada, pois não é um formato de imagem válido! </p>"
+    );
+  }
   i++;
 }
 
